@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT PACIFICO -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Projets MMI</title>
+</head>
+
+<body>
+  <h1>Mes projets MMI</h1>
+  <a class="home" href="/index.html">HOME</a>
+  <!-- slider photos -->
+  <section class="slider">
+    <div class="js-photos">
+      <div class="js-photo">
+        <a href="/explication/explication_podcast.html">
+          <img class="photoDouble clone" src="images/iconPodcast.png" alt="projet podcast">
+        </a>
+      </div>
+
+      <div class="js-photo">
+        <a href="/explication/explication_wordpress.html">
+          <img class="photo" src="images/iconMaison.png" alt="projet site wordpress">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_interview.html">
+          <img class="photo" src="images/iconVideo.png" alt="projet interview">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_afficheLondres.html">
+          <img class="photo" src="images/iconImage.png" alt="projet affiche Londres">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication_7mots.html">
+          <img class="photo" src="images/iconSketchbook.png" alt="projet livre 7 mots">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_dataviz.html">
+          <img class="photo" src="images/iconDataviz.png" alt="projet visualisation de données">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_refonte.html">
+          <img class="photo" src="images/iconUX.png" alt="projet refonte d'application">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_resaweb.html">
+          <img class="photo" src="images/iconCoding.png" alt="projet site de réservation">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_podcast.html">
+          <img class="photoDouble" src="images/iconPodcast.png" alt="projet podcast">
+        </a>
+      </div>
+
+      <div class="js-photo">
+        <a href="/explication/explication_wordpress.html">
+          <img class="photo clone" src="images/iconMaison.png" alt="projet site wordpress">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explicationexplication_interview.html">
+          <img class="photo clone" src="images/iconVideo.png" alt="projet interview">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication_afficheLondres.html">
+          <img class="photo clone" src="images/iconImage.png" alt="projet affiche Londres">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_7mots.html">
+          <img class="photo clone" src="images/iconSketchbook.png" alt="projet livre 7 mots">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_dataviz.html">
+          <img class="photo clone" src="images/iconDataviz.png" alt="projet visualisation de données">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_refonte.html">
+          <img class="photo clone" src="images/iconUX.png" alt="projet refonte d'application">
+        </a>
+      </div>
+      <div class="js-photo">
+        <a href="/explication/explication_resaweb.html">
+          <img class="photo clone" src="images/iconCoding.png" alt="projet resaweb">
+        </a>
+      </div>
+    </div>
+    <section class="slidebouton">
+      <button class="BtnDecalDroite">⭠</button>
+          <button class="BtnDecalGauche">⭢</button>
+    </section>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var photosWrapper = document.querySelector('.js-photos');
+      var photos = document.querySelectorAll('.js-photo');
+      var photoWidth = photos[0].offsetWidth; // 500px
+
+      var btnDecaleGauche = document.querySelector('.BtnDecalGauche');
+      var btnDecaleDroite = document.querySelector('.BtnDecalDroite');
+
+      // position slide courante
+      var position = 1;
+      var minPosition = 0;
+      var maxPosition = photos.length - 3;
+
+      function decaleGauche() {
+        position++;
+
+        if (position > maxPosition) {
+          retourDebut();
+          setTimeout(function () {
+            photosWrapper.classList.remove('no-anime'); // on remet la transition animÃ©e en place
+            decaleGauche(); // on passe du clone Ã  la slide rÃ©ellement souhaitÃ©e avec l'animation
+          }, 20);
+        } else {
+          photosWrapper.style.left = position * -photoWidth + "px";
+        }
+      }
+
+      function decaleDroite() {
+        position--;
+
+        if (position < minPosition) {
+          retourFin();
+          setTimeout(function () {
+            photosWrapper.classList.remove('no-anime'); // on remet la transition animÃ©e en place
+            decaleDroite(); // on passe du clone Ã  la slide rÃ©ellement souhaitÃ©e avec l'animation
+          }, 20);
+        } else {
+          photosWrapper.style.left = position * -photoWidth + "px";
+        }
+      }
+
+      function retourDebut() {
+        position = minPosition + 1;
+        photosWrapper.classList.add('no-anime'); // on empÃ¨che la transition animÃ©e
+        photosWrapper.style.left = position * -photoWidth + "px"; // on saute sur le clone
+      }
+
+      function retourFin() {
+        position = maxPosition - 1;
+        photosWrapper.classList.add('no-anime'); // on empÃ¨che la transition animÃ©e
+        photosWrapper.style.left = position * -photoWidth + "px"; // on saute sur le clone
+      }
+
+      btnDecaleGauche.addEventListener('click', decaleGauche);
+      btnDecaleDroite.addEventListener('click', decaleDroite);
+
+
+    });
+
+
+  </script>
+</body>
+<style>
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #AFDAA6;
+    overflow: hidden;
+  }
+
+  .home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    width: 10vh;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Pacifico';
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'pacifico';
+  }
+
+  /* LE SLIDER */
+  .slider {
+    overflow: hidden;
+    position: relative;
+    top: 20vh;
+    width: 100vw;
+    height: 340px;
+    /* display:flex; */
+    /* flex-direction:column; */
+  }
+
+  .js-photos {
+    position: absolute;
+    width: 1530px;
+    height: 340px;
+    left: -510px;
+    display: flex;
+    transition: left 0.6s ease-out;
+    border-radius: 0;
+  }
+
+  .js-photos.no-anime {
+    transition: none;
+  }
+
+  .js-photo {
+    position: relative;
+    width: 510px;
+    height: 340px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+  }
+
+  .BtnDecalGauche,
+  .BtnDecalDroite {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(219, 219, 219);
+    font-size: 2rem;
+    font-family: 'Bebas neue', cursive;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+  }
+
+  .BtnDecalGauche {
+    left: inherit;
+    right: 5px;
+  }
+
+  .photo {
+    width: 60%;
+    height: 70%;
+
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+  }
+
+  .photoDouble {
+    width: 200px;
+    height: 200px;
+
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+  }
+
+  @keyframes swing {
+
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+      -webkit-transform-origin: center;
+    }
+
+    20% {
+      -webkit-transform: rotate(15deg);
+    }
+
+    40% {
+      -webkit-transform: rotate(-10deg);
+    }
+
+    60% {
+      -webkit-transform: rotate(5deg);
+    }
+
+    80% {
+      -webkit-transform: rotate(-5deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(0deg);
+    }
+  }
+
+  @keyframes swing {
+    20% {
+      transform: rotate(15deg);
+    }
+
+    40% {
+      transform: rotate(-10deg);
+    }
+
+    60% {
+      transform: rotate(5deg);
+    }
+
+    80% {
+      transform: rotate(-5deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @media screen and (max-width:700px) {
+    .js-photo{
+      width: 200px;
+    }
+    
+  }
+</style>
+
+</html>
