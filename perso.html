@@ -19,6 +19,8 @@
     <input type="checkbox" id="c1">
     <input type="checkbox" id="c2">
     <input type="checkbox" id="c3">
+    <input type="checkbox" id="c4">
+    <input type="checkbox" id="c5">
 
 
     <span class="coverTurn"></span>
@@ -26,34 +28,68 @@
 
     <div class="flip-book">
       <div class="flip" id="p1">
-        <div class="back">
-          <img src="yaya.png">
-          <label class="back-btn" for="c1">Back</label>
-        </div>
         <div class="front">
-          <h2>Apple</h2>
+          <p>Mes oeuvres sont des dessins fais avec différents outils??</p>
+          <p> Je me suis mise au dessin pendant l'été 2022, et je ne me suis pas arreté depuis</p>
+          <p>Je trouve généralement mon inspiration sur Pinterest. Je les mets dans des dossiers et quand j'ai le temps je mis mets, je refais le dessin plus ou moins fidèlement en fonction de mon envie</p>
           <label class="next-btn" for="c1">Next</label>
         </div>
-      </div>
-      <div class="flip" id="p2">
         <div class="back">
-          <img src="spidey.png">
-          <label class="back-btn" for="c2">Back</label>
-        </div>
-        <div class="front">
-          <h2>Pineapple</h2>
-          <label class="next-btn" for="c2">Next</label>
+          <img src="/perso/eyes.jpg">
+          <label class="back-btn" for="c1">Back</label>
         </div>
       </div>
 
-      <div class="flip" id="p3">
+      <div class="flip" id="p2">
+        <div class="front">
+          <p>Eyes, plein de eyes. </p>
+          
+          <p>Ce dessin a été fais aux crayon de couleurs pour le fond et à l'aquarelle pour la couleur des yeux.</p>
+          <label class="next-btn" for="c2">Next</label>
+        </div>
         <div class="back">
-          <img src="tattoo.png">
+          <img src="/perso/spidey.png">
+          <label class="back-btn" for="c2">Back</label>
+        </div>
+        
+      </div>
+
+      <div class="flip" id="p3">
+        <div class="front">
+          <p>Spidey</p>
+          <p>Dessin numérique réalisé sur mon téléphone, avec l'application Sketchbook.</p>
+          <p>Le dessin de gauche est l'original et à droite c'est mon oeuvre.</p>
+          <label class="next-btn" for="c3">Next</label>
+        </div>
+        <div class="back">
+          <img src="/perso/tattoo.png" alt="">
           <label class="back-btn" for="c3">Back</label>
         </div>
+        
+      </div>
+
+      <div class="flip" id="p4">
         <div class="front">
-          <h2>Strawberry</h2>
-          <label class="next-btn" for="c3">Next</label>
+          <p>The Great Wave</p>
+          <p>Dessin numérique fais encore une fois sur mon téléphone.</p>
+          <p>Je me suis inspirée de l'oeuvre "The Great Wave off Kanagawa" que je modifié celon mes envies. Ce dessin à finalement servis de base pour mon tatouage sur la jambe.</p>
+          <label class="next-btn" for="c4">Next</label>
+        </div>
+        <div class="back">
+          <img src="/perso/vachette.jpg" alt="">
+          <label class="back-btn" for="c4">Back</label>
+        </div>
+      </div>
+
+      <div class="flip" id="p5">
+        <div class="front">
+          <p>La vachette</p>
+          <label class="next-btn" for="c5">Next</label>
+        </div>
+        <div class="back">
+          <p class="end">The end</p>
+          <!-- <img src="/perso/vachette.jpg" alt=""> -->
+          <label class="back-btn" for="c5">Back</label>
         </div>
       </div>
     </div>
@@ -87,7 +123,15 @@
     position: fixed;
     top: 0;
   }
-
+p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .end{
+    color: aliceblue;
+    padding: 35%;
+    font-size: 2rem;
+  }
   .coverBack {
     position: absolute;
     padding: 1rem;
@@ -97,8 +141,8 @@
     box-sizing: border-box;
     background-color: #36354e;
     transform: rotateY(180deg);
-    width: 19.25rem;
-    height: 22.5rem;
+    width: 68%;
+    height: 100%;
   }
 
   .coverTurn {
@@ -121,23 +165,11 @@
     box-sizing: border-box;
     background-color: #28963a;
     transform: rotateY(180deg);
-    width: 19.25rem;
-    height: 22.5rem;
-
-    z-index: 1;
+     width: 68%;
+    height: 100%;
   }
 
-  #p1 {
-    z-index: 1000;
-  }
-
-  #p2 {
-    z-index: 1000;
-  }
-
-  #p3 {
-    z-index: 1000;
-  }
+  
 
   @keyframes bookCover {
     30% {
@@ -146,7 +178,7 @@
 
     100% {
       transform: rotateY(0deg);
-      z-index: 1;
+      
     }
   }
 
@@ -157,7 +189,7 @@
 
     100% {
       transform: rotateY(180deg);
-      z-index: 999;
+      
     }
   }
 </style>
