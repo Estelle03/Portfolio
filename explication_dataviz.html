@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <a class="home" href="index.html">HOME</a>
+    <a class="home" href="/index.html">HOME</a>
     <a class="home" href="/mmi/MMI.html">Projets MMI</a>
     <h1>Dataviz</h1>
     <main>
         <div>
-            <a href="https://estelle03.github.io/D-pot/sae303/sae303.html" target="_blank">
+            <a href="https://resaweb.fabert.butmmi.o2switch.site/" target="_blank">
 
                 <div class="imageLien">
                     Voir le site ↗
@@ -25,12 +25,7 @@
             </a>
         </div>
         <div class="text">
-            <p>Le projet <b>Dataviz</b> est un projet MMI de 2ème année. Le projet était de faire un site avec un élément de visualisation de données. Avec <a href="https://www.linkedin.com/in/emy-bigirimana-97b540206/">Emy BIGIRIMANA</a> et <a href="https://www.linkedin.com/in/jeanne-besombes-783868221/">Jeanne BESOMBES</a> nous avons choisis de faire une carte intéractive sur l'évolution des lois sur le droit de l'avortement en Europe.</p>
-            <br>
-            <p>Sur ce projet mon role à été de recolter des données sur les pays, cette taches a été la plus longue et ... qui nous a demander a nous trois notre implication. 
-            <br>
-            A coté de cela, j'ai travaillé sur la structure et le design visuel du site. Combien de pages, qu'elle est leur role, les éléments qui les composerons. Les animations, les coueleurs, les typographies. Nottament avec un oeil sur l'accessibilité, en verifiant les contraste entre couleurs et textes, la tailles des éléments etc.
-            <br> Le delais de réalisation de ce projet ne m'a pas permis de pousser l'accessibilité de ce site aussi loin que je l'aurais souhaité, les modifications visuelles de la carte étant seulement basée sur la couleur, cela pose un problème pour les personnes avec une difficultée pour voir les differents couleurs. </p>
+            <p>explication projet</p>
         </div>
     </main>
 </body>
@@ -70,13 +65,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         /* line-height: 25px; */
         gap: 0;
     }
     .text{
         display: flex;
         align-items: flex-start;
+        margin: 50px 0px;
     }
     p{
         font-size: 1.3rem;
@@ -106,6 +102,18 @@
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 10px;
+    }
+    @media screen and (max-width:700px) {
+        main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        div{
+            width:100%;
+            height:50%;
+        }
+        
     }
 </style>
 
