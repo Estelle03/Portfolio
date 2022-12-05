@@ -9,8 +9,22 @@ body {
     overflow: hidden;
     /* background-color: black; */
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 40%;
+    margin: 0px 5%;
+    z-index: 100000;
 
-h1 {
+    font-size: 3rem;
+    /* font-family: 'Pacifico'; */
+}
+
+/* h1 {
     font-size: 3rem;
     display: flex;
     justify-content: center;
@@ -18,13 +32,26 @@ h1 {
     margin: 0;
     font-family: 'Pacifico';
     z-index: 1000;
-    /*position: absolute;*/
+    position: absolute;
     text-align: center;
 }
-
+h2{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Pacifico';
+    z-index: 1000;
+    position: absolute;
+    text-align: center;position: absolute;
+    z-index: 10;
+    align-self: center;
+    align-items: center;
+} */
 
 #perso {
-    background-image: url(/images/banniereLinkedin3.jpg);
+    /* background-image: url(/images/banniereLinkedin3.jpg); */
     background-repeat: no-repeat;
     background-color: #C5ABD1;
     position: absolute;
@@ -87,7 +114,7 @@ h1 {
 
 #contact {
     background-color: #79A9D1;
-    background-image: url(/images/banniereLinkedin1.jpg);
+    /* background-image: url(/images/banniereLinkedin1.jpg); */
     background-repeat: no-repeat;
     position: absolute;
     color: black;
@@ -102,7 +129,7 @@ h1 {
 }
 #contactBack{
     background-color: #79A9D1;
-    background-image: url(/images/banniereLinkedin1.jpg);
+    /* background-image: url(/images/banniereLinkedin1.jpg); */
     background-repeat: no-repeat;
     position: absolute;
     color: black;
