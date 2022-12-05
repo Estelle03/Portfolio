@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A propos</title>
 </head>
+
 <body>
-    <a class="home" href="index.html">HOME</a>
-    <h1>A propos de moi</h1>
-    <p>Hello, moi c'est Estelle Fabert. Je suis née en 2003 près de Paris <br>
-    Je suis étudiante en BUT MMI. C'est-à-dire un Bachelor Universitaire de Technologie en Métiers du Multimédia et de l'Internet.</p>
-    
+  <nav>
+    <a class="home" href="/index.html">HOME</a>
+    <a class="home" href="/mmi/MMI.html">Projets MMI</a>
+    <a class="home" href="/perso/perso.html">Projets personnels</a>
+  </nav>
+
+  <h1>A propos de moi</h1>
+  <p>Hello, moi c'est Estelle Fabert. Je suis née en 2003 près de Paris <br>
+    Je suis étudiante en BUT MMI. C'est-à-dire un Bachelor Universitaire de Technologie en Métiers du Multimédia et de
+    l'Internet.
+  </p>
+
+  <a href="/Apropos/CV_EstelleFabert.pdf">Téléchargez mon CV ici!</a>
+  <a href="https://www.linkedin.com/in/estelle-fabert-a18003222/">Mon profil Linkedin</a>
+
 </body>
 <style>
-    .home {
-    position: fixed;
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    height: 100%;
+    background-color: beige;
+  }
+
+  nav {
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+  }
+
+  .home {
+    /* position: fixed; */
     top: 0;
     left: 0;
-    font-size: 1.5rem;
-    width: 10vh;
+    font-size: 1.2rem;
+    width: 100%;
     padding: 0px 30px;
     text-decoration: none;
     color: black;
     font-family: 'Pacifico';
+    /* display: flex; */
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
   }
 </style>
+
 </html>
