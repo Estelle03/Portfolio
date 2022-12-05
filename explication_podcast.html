@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <a class="home" href="index.html">HOME</a>
+    <a class="home" href="/index.html">HOME</a>
     <a class="home" href="/mmi/MMI.html">Projets MMI</a>
     <h1>Podcast illustré</h1>
     <main>
         <div>
-            <a href="" target="_blank">
+            <a href="https://resaweb.fabert.butmmi.o2switch.site/" target="_blank">
 
                 <div class="imageLien">
                     Voir le site ↗
@@ -25,9 +25,7 @@
             </a>
         </div>
         <div class="text">
-            <p>Ce podcast à été réalisé en 2è année de MMI.
-A l'occasion des 100 ans de la mort de Gustave Eiffel en 2023, il nous a été demandé de réaliser un podcast. La particularité de ce podcast est qu'il est également mis en image.
-Sur le thème de "Mort,postérité et héritage", avec Jeanne BESOMBES nous avons rédigé le script, enregistré le sons et créer les animations visuelles.</p>
+            <p>explication projet</p>
         </div>
     </main>
 </body>
@@ -67,13 +65,14 @@ Sur le thème de "Mort,postérité et héritage", avec Jeanne BESOMBES nous avon
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         /* line-height: 25px; */
         gap: 0;
     }
     .text{
         display: flex;
         align-items: flex-start;
+        margin: 50px 0px;
     }
     p{
         font-size: 1.3rem;
@@ -103,6 +102,18 @@ Sur le thème de "Mort,postérité et héritage", avec Jeanne BESOMBES nous avon
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 10px;
+    }
+    @media screen and (max-width:700px) {
+        main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        div{
+            width:100%;
+            height:50%;
+        }
+        
     }
 </style>
 
