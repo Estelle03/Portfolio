@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <a class="home" href="index.html">HOME</a>
+    <a class="home" href="/index.html">HOME</a>
     <a class="home" href="/mmi/MMI.html">Projets MMI</a>
     <h1>Affiche Londres</h1>
     <main>
         <div>
-            <a href="" target="_blank">
+            <a href="https://resaweb.fabert.butmmi.o2switch.site/" target="_blank">
 
                 <div class="imageLien">
                     Voir le site ↗
@@ -25,11 +25,7 @@
             </a>
         </div>
         <div class="text">
-            <p>Ce projet de création de communication sur une activité à Londres à été réalisé en 2è année de MMI.
-            <br>J'ai donc réalisé avec Emy BIGIRIMANA, un moodboard autour du thème de Jack L'éventreur. 
-            <br>J'ai réalisé une silhouette du personnage sur Illustrator, trouvé des typographie, des couleurs. J'ai également mis en images nos réalisations dans un moockup.</p>
-            <p>Les différents formats de publications nous était imposés ainsi que les textes en français et l'élément cartographie visuel.</p>
-            <br><p>Le plus difficile dans ce projet a été d'armonisé toutes les informations sur l'affiche et de contraster avec l'ambiance sombre de notre thème.</p>
+            <p>explication projet</p>
         </div>
     </main>
 </body>
@@ -69,13 +65,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         /* line-height: 25px; */
         gap: 0;
     }
     .text{
         display: flex;
         align-items: flex-start;
+        margin: 50px 0px;
     }
     p{
         font-size: 1.3rem;
@@ -105,6 +102,18 @@
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 10px;
+    }
+    @media screen and (max-width:700px) {
+        main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        div{
+            width:100%;
+            height:50%;
+        }
+        
     }
 </style>
 
