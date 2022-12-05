@@ -22,12 +22,13 @@
 </head>
 
 <body>
-    <a class="home" href="index.html">HOME</a>
+    <a class="home" href="/index.html">HOME</a>
     <a class="home" href="/mmi/MMI.html">Projets MMI</a>
     <h1>L'Interview</h1>
     <main>
         <div>
             <a href="‌https://www.youtube.com/watch?v=Bz8cCQbTU3c">
+                <!-- <img src="images/miniature (2).JPG" alt=""> -->
                 <div class="imageLien">
                     Voir la vidéo ↗
                 </div>
@@ -80,13 +81,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         /* line-height: 25px; */
         gap: 0;
     }
     .text{
         display: flex;
         align-items: flex-start;
+        margin: 50px 0px;
     }
     p{
         font-size: 1.3rem;
@@ -117,6 +119,18 @@
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 10px;
+    }
+    @media screen and (max-width:700px) {
+        main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        div{
+            width:100%;
+            height:50%;
+        }
+        
     }
 </style>
 
