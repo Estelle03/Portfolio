@@ -9,23 +9,32 @@
 <body>
     <main>
         <h1>Les affiches de campagnes Londonienne</h1>
-        <img src="MOODBOARD.svg" alt="">
-    <img src="abris-bus (120x175cm).svg" alt="">
-    <img src="160x600.svg" alt="">
-    <img src="728x90.svg" alt="">
+        <iframe src="AfficheLondres.pdf#toolbar=0" > </iframe>
+        
 </main>
     
 </body>
 <style>
+    *::after {
+    box-sizing: border-box;
+}
+body{
+    height: 90vh;
+}
     main{
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    img{
+    iframe{
+        height: 100%;
+        width: 70%;
+    }
+    /* img{
         max-width:80vw;
         max-height: 100vh;
-    }
+    } */
 </style>
 </html>
