@@ -38,7 +38,7 @@ h1 {
 }
 #persoBack{
     background-color: #C5ABD1;
-    /* background-image: url(/banniereLinkedin1.jpg); */
+    background-image: url(dessins.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -68,7 +68,7 @@ h1 {
 }
 #mmiBack{
     background-color: #AFDAA6;
-    /* background-image: url(/banniereLinkedin2.jpg); */
+    background-image: url(mmi.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -97,7 +97,7 @@ h1 {
 }
 #contactBack{
     background-color: #79A9D1;
-    /* background-image: url(/images/banniereLinkedin1.jpg); */
+    background-image: url(me.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
