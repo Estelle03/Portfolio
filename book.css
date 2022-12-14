@@ -75,6 +75,8 @@ p{
 	backface-visibility: hidden;
 	background: #000;
 	border-radius: 5px 0px 0px 5px;
+	display: flex;
+	align-items: center;
 }
 .next-btn{
 	position: absolute;
