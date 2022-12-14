@@ -42,7 +42,7 @@ h1 {
 }
 #mmiBack{
     background-color: #C5ABD1;
-    background-image: url(/mmi.png);
+    background-image: url(mmi.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -75,7 +75,7 @@ h1 {
 }
 #contactBack{
     background-color: #79A9D1;
-    background-image: url(/me.png);
+    background-image: url(me.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -109,7 +109,7 @@ h1 {
 }
 #persoBack{
     background-color: #AFDAA6;
-    background-image: url(/dessins.png);
+    background-image: url(dessins.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
