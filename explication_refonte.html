@@ -71,8 +71,9 @@
         display: flex;
         flex-direction: row;
         margin-top: 3%;
-        padding: 0 5%;
+        padding: 0 2%;
         gap: 2%;
+        height: 70vh;
     }
 
     div {
@@ -87,13 +88,10 @@
     .text{
         display: flex;
         align-items: flex-start;
-        margin: 50px 0px;
+        justify-content: flex-start;
+        height: fit-content;
     }
-    /* img {
-        width: 70%;
-        padding: 0 10px 0 30px;
-        border-radius: 5px;
-    } */
+    
     p{
         font-size: 1.3rem;
         font-family:roboto;
@@ -110,10 +108,12 @@
     .imageLien:hover{
         text-decoration: underline;
         font-size: 2.3rem;
+        cursor:pointer;
     }
     .imageLien{
         color: #060606;
         font-weight: 900;
+        font-size: 2rem;
         width: 100%;
         height: 100%;
         display: flex;
@@ -121,19 +121,25 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        border-radius: 10px;
+        border-radius: 1px;
     }
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         main{
             display: flex;
             flex-direction: column;
             height: 100vh;
         }
+        .text{
+            justify-content: flex-start;
+            margin-bottom: 50px;
+        }
         div{
             width:100%;
             height:50%;
         }
-        
+        div:not(.text){
+            height: 50vh;
+        }        
     }
 </style>
 
