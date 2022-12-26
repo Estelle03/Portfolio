@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+*::after {
+    box-sizing: border-box;
+}
+
+body {    
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+h1 {
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    font-family: 'Leckerli one';
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+}
+
+#main {
+    width: 35%;
+    height: 100%;
+    background-color: rgb(86, 68, 150);
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Leckerli one';
+    padding: 5px;
+}
+
+a {
+    cursor: pointer;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    height: 100%;
+}
+
+#contact {
+    background-color: #79A9D1;
+    background-image: url(/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    animation: 1.3s slidein 0.3s;
+}
+#contactBack{
+    background-color: #29455d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    color: black;
+}
+
+#mmi {
+    background-color: #C5ABD1;
+    background-image: url(/Capture\ d’écran\ code3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    animation: 1.4s slidein 0.3s;
+}
+#mmiBack{
+    background-color: #4c3357;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+#perso {
+    background-color: #AFDAA6;
+    background-image: url(/dessins353.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 5;   
+
+    animation: 1.5s slidein 0.3s;
+}
+#persoBack{
+    background-color: #2a6641;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+.flip-box {
+    background-color: transparent;
+    
+    height: 100%;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: rgb(30, 47, 65);
+    color: black;
+    transform: rotateX(180deg);
+}
