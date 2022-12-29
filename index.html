@@ -1,20 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="DesktopCss2.css">
-    <title>home</title>
+    <!-- PACIFICO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- KANIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="MobilCSS.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="DesktopCss.css">
+
+    <title>Portfolio-Estelle Fabert</title>
 </head>
 
 <body>
-    <div id="main">Bienvenu sur le portfolio d'Estelle Fabert! <br> Apprenez-en plus sur moi a travers differents éléments qui compose ma vie...</div>
 
     <nav>
+        <section class="titres">
+        <h1>Bienvenu sur le protfolio d'Estelle FABERT</h1>
+        <h2>Apprenez-en plus sur moi à travers différents aspect qui compose mon monde!</h2>
+        </section>
+
+        <div class="container">
+            <div class="content">
+                <a id="liennext" href="#pagenext">
+                <svg id="more-arrows">
+                    <polygon class="more-arrows arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 " />
+                    <polygon class="more-arrows arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 " />
+                    <polygon class="more-arrows arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 " />
+                </svg>
+            </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="pagenext">
+        <h3>On commence par où?</h3>
+        <div id="choix">
+
         <section class="flip-box contact">
-            <a href="Apropos.html">
+            <a href="/Apropos/Apropos.html">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div id="contact"></div>
@@ -27,7 +60,7 @@
         </section>
 
         <section class="flip-box mmi">
-            <a href="MMI.html">
+            <a href="/mmi/MMI.html">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div id="mmi"></div>
@@ -40,7 +73,7 @@
         </section>
 
         <section class="flip-box perso">
-            <a href="perso.html">
+            <a href="/perso/perso.html">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div id="perso"></div>
@@ -51,8 +84,117 @@
                 </div>
             </a>
         </section>
+    </div>
+    </main>
 
-    </nav>
+
 </body>
+<script media="screen and (max-width:700px)" src="MobilJs.js"></script>
+<script media="screen and (min-width:700px)" src="DesktopJs.js"></script>
+
+
+<style>
+    *::after {
+    box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    nav {
+        /* background-image: url(/images/banniereLinkedinCopie.jpg); */
+        background-size: contain;
+        height: 100%;
+        /* background-color: rgb(31, 30, 30); */
+        background-image: linear-gradient(#1F1E1E, rgb(139, 137, 137));
+    }
+    p{
+        text-align: center;
+    }
+    .titres{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+    .container {
+        height: 100px;
+        /* padding: 20px; */
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+    }
+    .content {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Arrow & Hover Animation */
+    #more-arrows {
+        width: 75px;
+        height: fit-content;
+
+    }
+    #more-arrows:hover {
+        fill: rgb(255, 250, 250);
+        transition: all .2s ease-out;
+    }
+    #more-arrows:hover>.arrow-bottom {
+        transform: translateY(5px);
+        opacity: 1;
+    }
+    #more-arrows:hover>.arrow-top {
+        /* transform: translateY(-10px); */
+        opacity: 0.5;
+    }
+    #more-arrows:hover>.arrow-middle {
+        /* transform: translateY(-10px); */
+        opacity: 0.75;
+    }
+    polygon {
+        fill: #FFF;
+        transition: all .2s ease-out;
+    }
+    .arrow-middle {
+        opacity: 0;
+        fill: rgb(250, 227, 249);
+    }
+    .arrow-top {
+        opacity: 0;
+        fill: rgb(251, 172, 172);
+    }
+    #liennext{
+        width: 100px;
+        height: 100px;
+    }
+
+
+    #pagenext{
+        height: 100vh;
+        /* background-color: #ffffff; */
+        background-image: linear-gradient(rgb(139, 137, 137), white);
+    }
+
+    h3{
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+        font-size: 2.5em;
+    }
+    #choix{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+    }
+    a{
+        width: 100%;
+        height: 100%;
+        transition: smooth;
+    }
+</style>
 
 </html>
