@@ -6,11 +6,8 @@
 body {
     margin: 0;
     height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background-color: black;
+    background-color: white;
 }
-
 h1 {
     font-size: 2.5em;
     display: flex;
@@ -19,168 +16,111 @@ h1 {
     margin: 0;
     width: 100%;
     z-index: 1000;
-    position: absolute;
     text-align: center;
-    font-family: 'Leckerli one';
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
 }
-
-
-#mmi {
-    /* background-color: #C5ABD1; */
-    background-image: url(home111.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    font-size: 2rem;
-    font-family: 'kanit', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    animation: 1.5s slidein 0.3s;
+h2{
+    font-size: 2em;
+    color: azure;
+    text-align: center;
+    padding: 0px 10px;
 }
-#mmiBack{
-    background-color: #C5ABD1;
-    background-image: url(mmi.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    font-size: 2rem;
-    font-family: 'kanit', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    cursor: pointer;
-    border: none;
-    animation: 1.5s slidein 0.3s;
-}
-
-#contact {
-    /* background-color: #79A9D1; */
-    background-image: url(home222.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    font-size: 2rem;
-    font-family: 'kanit', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    animation: 1.3s slidein 0.3s;
-}
-#contactBack{
-    background-color: #79A9D1;
-    background-image: url(me.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    font-size: 2rem;
-    font-family: 'kanit', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border: none;
-
-    animation: 1.3s slidein 0.3s;
-}
-
-#perso {
-    /* background-color: #AFDAA6; */
-    background-image: url(home333.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
-    font-size: 2rem;
-    font-family: 'kanit', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 5;
-
-    animation: 1.3s slidein 0.3s;
-}
-#persoBack{
-    background-color: #AFDAA6;
-    background-image: url(dessins.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    font-size: 2rem;
-    font-family: 'kanit', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    animation: 1.3s slidein 0.3s;
-}
-
-@keyframes slidein {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0%);
-    }
-}
-
-
-
-
 div {
     width: 100%;
-    height: 100%;
-    /* border-radius: 150px; */
-    /* background-color: red; */
-    /* position: absolute; */
-    /* top: 0px; */
     z-index: 1;
 }
-
-p {
-    color: black;
-    z-index: 1000;
-}
-
 a {
     cursor: pointer;
 }
 
+#mmi {
+    background-image: url(mmiFace.png);
+    background-size: cover;
+    background-position: center;
 
+    font-size: 2rem;
+    font-family: 'kanit', sans-serif;
 
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+}
+#mmiBack{
+    background-image: url(mmiBack.png);
+    background-size: cover;
+    background-position: center;
 
+    font-size: 1.5rem;
+    font-family: 'kanit', sans-serif;
 
+    display: flex;
+    align-items: center;
 
+    width: 90%;
+    height: 100%;
+    cursor: pointer;
 
+    border: none;
+    border-radius: 50%;
+}
 
+#contact {
+    background-image: url(moiFace.png);
+    background-size: cover;
+    background-position: center;
 
+    width: 90%;
+    height: 100%;
 
+    border-radius: 50%;
+}
+#contactBack{
+    background-image: url(moiBack.png);
+    background-size: cover;
+    background-position: center;
+    
+    width: 90%;
+    height: 100%;
+    
+    font-family: 'kanit', sans-serif;
+    font-size: 1.5rem;
 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
 
+#perso {
+    background-image: url(PPFace.png);
+    background-size: cover;
+    background-position: center;
 
+    width: 90%;
+    height: 100%;
 
+    border-radius: 50%;
+}
+#persoBack{
+    background-image: url(PPBack.png);
+    background-size: cover;
+    background-position: center;
 
+    font-size: 1.5rem;
+    font-family: 'kanit', sans-serif;
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
 
-
-
-
-
+    width: 90%;
+    height: 100%;    
+}
 
 .flip-box {
-    position: absolute;
-    background-color: transparent;
-    width: 34%;
-    height: 100%;
+    width: 20vw;
+    height: 40vh;
+    border-radius:50%;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
 }
@@ -193,22 +133,9 @@ a {
     text-align: center;
     transition: transform 1s;
     transform-style: preserve-3d;
+    border-radius: 50%;
 }
 
-.contact {
-    position: absolute;
-    right: 34%;
-}
-
-.mmi {
-    position: absolute;
-    right: 68%;
-}
-
-.perso {
-    position: absolute;
-    right: 0%;
-}
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-box:hover .flip-box-inner {
@@ -224,6 +151,7 @@ a {
     -webkit-backface-visibility: hidden;
     /* Safari */
     backface-visibility: hidden;
+    border-radius: 50%;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -233,7 +161,16 @@ a {
 
 /* Style the back side */
 .flip-box-back {
-    background-color: rgb(30, 47, 65);
     color: black;
     transform: rotateY(180deg);
+}
+
+@media screen and (max-width:1000px) {
+    .flip-box {
+        width: 20vw;
+        height: 20vh;
+        border-radius:50%;
+        perspective: 1000px;
+        /* Remove this if you don't want the 3D effect */
+    }
 }
