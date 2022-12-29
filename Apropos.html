@@ -10,20 +10,55 @@
 
 <body>
   <nav>
-    <a class="home" href="index.html">HOME</a>
-    <a class="home" href="MMI.html">Projets MMI</a>
-    <a class="home" href="perso.html">Projets personnels</a>
+    <a class="home" href="/index.html">HOME</a>
+    <a class="home" href="/mmi/MMI.html">Projets MMI</a>
+    <a class="home" href="/perso/perso.html">Projets personnels</a>
   </nav>
 
   <h1>A propos de moi</h1>
-  <p>Hello, moi c'est Estelle Fabert. Je suis née en 2003 près de Paris <br>
-    Je suis étudiante en BUT MMI. C'est-à-dire un Bachelor Universitaire de Technologie en Métiers du Multimédia et de
-    l'Internet.
-  </p>
 
+  <main>
+    <section>
+      <img src="" alt="">
+      <p>
+        Bonjour, je m'appelle Estelle Fabert. Je suis née en 2003 près de Paris. 
+      </p>
+    </section>
+
+    <section>
+      <p>
+        Je suis étudiante en BUT MMI.
+        C'est-à-dire un Bachelor Universitaire de Technologie en Métiers du Multimédia et de l'Internet. J’ai choisi de
+        me spécialiser en création audiovisuelle.
+
+        Je suis très épanouie dans l’apprentissage du design web, de la création de maquette, de l’animation vidéo, le
+        design interactif et ergonomique! 
+      </p>
+      <img src="" alt="">
+    </section>
+
+    <section>
+      <p>
+        <img src="" alt="">
+        Je suis une personne très visuelle, les couleurs, les formes, l’harmonie des
+        groupes me parlent vraiment et je veux en faire le centre de mon travail plus tard.
+        Je suis quelqu’un de dynamique, plein d’énergie, j’aime travailler en équipe et voir les projets se construire
+        et grandir. Ma plus grande fierté : voir que j’ai participé à produire du contenu de qualité!
+      </p>
+    </section>
+    
+    <section>
+      <p class="fin">
+        Je suis disponible pour un stage dans le webdesign à partir d’avril 2023. Mon portfolio vous donnera un aperçu
+        de mes compétences. <br> Bonne visualisation et à bientôt !
+      </p>
+    </section>
+
+  </main>
+  <footer>
   <a class="info" href="CV_EstelleFabert.pdf" target="_blank">Téléchargez mon CV ici!</a>
   <a class="info" href="https://www.linkedin.com/in/estelle-fabert-a18003222/" target="_blank">Mon profil Linkedin</a>
-
+</footer>
 </body>
 <style>
   *::after {
@@ -33,26 +68,21 @@
   body {
     margin: 0;
     height: 100%;
-    background-color: beige;
+    background-color: #79A9D1;
   }
-
   nav {
     width: 200px;
     height: fit-content;
     display: flex;
+    /* flex-direction: column; */
+    /* gap: 20px; */
     position: relative;
   }
-  .info{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-  }
-
   .home {
     /* position: fixed; */
     top: 0;
     left: 0;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     width: 100%;
     padding: 0px 30px;
     text-decoration: none;
@@ -65,8 +95,43 @@
     text-align: center;
   }
 
+
+  main {
+    width: 90%;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+  }
+  section{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+  }
+  img{
+    width: 20%;
+  }
+
   p {
     text-align: center;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2em;
+  }  
+
+.fin{
+  font-size: larger;
+  font-weight: 500;
+}
+
+  footer{
+    margin: 15px;
   }
 </style>
 
