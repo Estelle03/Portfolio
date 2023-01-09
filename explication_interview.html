@@ -17,27 +17,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/EF.png" type="image/x-icon">
 
     <title>MMI-Interview</title>
 </head>
 
 <body>
-    <a class="home" href="index.html">HOME</a>
-    <a class="home" href="MMI.html">Projets MMI</a>
+    <nav>
+    <a class="home" href="/index.html">HOME</a>
+    <a class="home" href="/mmi/MMI.html">Projets MMI</a>
+</nav>
     <h1>L'Interview</h1>
     <main>
         <div>
-            <div class="imageLien"> Copiez ce liens pour voir la vidéo : www.youtube.com/watch?v=Bz8cCQbTU3c </div>
+            <!-- <img src="images/miniature (2).JP" alt=""> -->
+            <div class="imageLien">
+                Voir la vidéo ↗
+            </div>
         </div>
         <div class="text">
-            <p>Ce projet de groupe portait sur le monde littéraire. Nous devions interviewer une personne dans ce domaine, dans notre cas, <u>Thibaud Okroglic</u> est l'un des fondateurs de <u>Neovel</u>, une plateforme d'édition numérique.</p>
+            <p>Ce projet de groupe portait sur le monde littéraire. Nous devions interviewer une personne dans ce
+                domaine, dans notre cas, <u>Thibaud Okroglic</u> est l'un des fondateurs de <u>Neovel</u>, une
+                plateforme d'édition numérique.</p>
             <br>
-            <p>Nous avions pour mission de trouver nous même notre interlocuteur, de planifier les rendez-vous, et enfin de réalisez le tournage. L'université nous fournissant le matériel que nous avons apris à utiliser durant l'année. 
-            <br>Les taches étaient réparties entre les différents membres pour plus d'efficacité et de rapidité.</p>
+            <p>Nous avions pour mission de trouver nous même notre interlocuteur, de planifier les rendez-vous, et enfin
+                de réalisez le tournage. L'université nous fournissant le matériel que nous avons apris à utiliser
+                durant l'année.
+                <br>Les taches étaient réparties entre les différents membres pour plus d'efficacité et de rapidité.
+            </p>
             <br>
-            <p>Enfin, nous devions rendre individuellement, <b>un montage vidéo</b> (réalisé sur Adobe Première Pro) de l'interview de 10min maximum et disponible à la diffusions selon le désir de la personne concernée.</p>
+            <p>Enfin, nous devions rendre individuellement, <b>un montage vidéo</b> (réalisé sur Adobe Première Pro) de
+                l'interview de 10min maximum et disponible à la diffusions selon le désir de la personne concernée.</p>
             <br>
-            <p>Les membres de l'équipe: <u>Jeanne Besombes</u>, <u>Thomas Devred</u>, <u>Moussa Diakite</u>.</p>
+            <p>Les membres de l'équipe: <u> <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADfVkFMB-oUfTH5N2RpGLTRelL7J399AhD4&keywords=jeanne%20besombes&origin=RICH_QUERY_SUGGESTION&position=0&searchId=2db41a87-cd74-4395-b98d-99b59090557f&sid=s*r" target="_blank"> Jeanne Besombes</a></u>, <u> <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAC-XtIUBd12NwUGVUuUPY5aUgugbcy7hZ-0&keywords=thomas%20devred&origin=RICH_QUERY_SUGGESTION&position=0&searchId=8e57d138-11ec-4907-b7c2-65dab013ba9f&sid=X8S" target="_blank"> Thomas Devred </a></u>, <u> <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADWpoC8BkZVzPQlxKvmD--sElcqeDCCZTz8&keywords=moussa%20diakite&origin=RICH_QUERY_SUGGESTION&position=0&searchId=3fd573b5-b4af-4787-88fb-522c7e2c8c99&sid=V*R" target="_blank"> Moussa Diakite </a></u>.</p>
         </div>
     </main>
 </body>
@@ -47,9 +59,19 @@
     }
 
     body {
-        background-color: #B8DCF2;
+        background-image: url(/mmi/marbreMmi.png);
         margin: 0;
     }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 10%;
+        position: relative;
+        top: 15px;
+    }
+
     .home {
         font-size: 1.5rem;
         width: 10vh;
@@ -59,18 +81,16 @@
         font-family: 'Pacifico';
     }
 
-    h1{
+    h1 {
         text-align: center;
         font-family: kanit;
     }
 
-    main{
+    main {
         display: flex;
         flex-direction: row;
         margin-top: 3%;
-        padding: 0 2%;
-        gap: 2%;
-        height: 70vh;
+        padding: 0 5%;
     }
 
     div {
@@ -78,63 +98,62 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         /* line-height: 25px; */
         gap: 0;
     }
-    .text{
+
+    .text {
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start;
         margin: 50px 0px;
     }
-    p{
+
+    p {
         font-size: 1.3rem;
-        font-family:roboto;
+        font-family: roboto;
         /* line-height: 25px; */
     }
-    a{
-        width: 80%;
-        height: 80%;
+
+    a {
+        width: 70%;
+        height: 50%;
         text-decoration: none;
         font-size: 2rem;
         font-family: kanit;
         border-radius: 5px;
     }
 
-    .imageLien:hover{
+    /* .imageLien:hover {
+        
         font-size: 2rem;
     }
-    .imageLien{
+ */
+    .imageLien {
         color: antiquewhite;
-        font-weight: 900;
-        font-size: 1.5rem;
+        font-weight: 500;
         width: 100%;
         height: 100%;
         display: flex;
-        background-image: url("vignetteInterview.png");
+        background-image: url("img/vignetteInterview.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        border-radius: 1px;
+        border-radius: 10px;
     }
-    @media screen and (max-width:800px) {
-        main{
+
+    @media screen and (max-width:700px) {
+        main {
             display: flex;
             flex-direction: column;
             height: 100vh;
         }
-        .text{
-            justify-content: flex-start;
-            margin-bottom: 50px;
+
+        div {
+            width: 100%;
+            height: 50%;
         }
-        div{
-            width:100%;
-            height:50%;
-        }
-        div:not(.text){
-            height: 50vh;
-        }        
+
     }
 </style>
 

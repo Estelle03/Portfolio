@@ -5,18 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- PACIFICO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
-    <!-- KANIT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <!-- Crete Round -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <!-- Preahvihear  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" media="screen and (max-width: 700px)" href="MobilCSS.css">
     <link rel="stylesheet" media="screen and (min-width: 700px)" href="DesktopCss.css">
+    <link rel="shortcut icon" href="EF.png" type="image/x-icon">
 
     <title>Portfolio-Estelle Fabert</title>
 </head>
@@ -47,39 +43,39 @@
         <div id="choix">
 
         <section class="flip-box contact">
-            <a href="Apropos.html">
+            <a href="/Apropos/Apropos.html">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div id="contact"></div>
                     </div>
                     <div class="flip-box-back">
-                        <div id="contactBack">A propos de moi</div>
+                        <div id="contactBack">A propos de <br> moi</div>
                     </div>  
                 </div>
             </a>
         </section>
 
         <section class="flip-box mmi">
-            <a href="MMI.html">
+            <a href="/mmi/MMI.html">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div id="mmi"></div>
                     </div>
                     <div class="flip-box-back">
-                        <div id="mmiBack">Mes projets MMI</div>
+                        <div id="mmiBack">Mes projets <br> MMI</div>
                     </div> 
                 </div>
             </a>
         </section>
 
         <section class="flip-box perso">
-            <a href="Creation.html">
+            <a href="/perso/perso2.html">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div id="perso"></div>
                     </div>
                     <div class="flip-box-back">
-                        <div id="persoBack">Mes projets personnels</div>
+                        <div id="persoBack">Mes projets <br> personnels</div>
                     </div> 
                 </div>
             </a>
@@ -89,9 +85,6 @@
 
 
 </body>
-<script media="screen and (max-width:700px)" src="MobilJs.js"></script>
-<script media="screen and (min-width:700px)" src="DesktopJs.js"></script>
-
 
 <style>
     *::after {
@@ -101,11 +94,8 @@
         scroll-behavior: smooth;
     }
     nav {
-        /* background-image: url(/images/banniereLinkedinCopie.jpg); */
-        background-size: contain;
         height: 100%;
-        /* background-color: rgb(31, 30, 30); */
-        background-image: linear-gradient(#1F1E1E, rgb(139, 137, 137));
+        background-image: url(/home.jpg);
     }
     p{
         text-align: center;
@@ -119,18 +109,34 @@
         gap: 20px;
 
     }
+    h1 {
+        font-size: 2.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        z-index: 1000;
+        text-align: center;
+        font-family: 'Crete Round';
+        color: #e3e3e3;
+    }
+    h2{
+        font-size: 2em;
+        color: #e3e3e3;
+        text-align: center;
+        padding: 0px 10px;
+        font-family: 'Crete Round';
+    }
     .container {
         height: 100px;
         /* padding: 20px; */
         text-align: center;
         position: absolute;
         bottom: 10px;
+        
     }
-    .content {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+    
 
     /* Arrow & Hover Animation */
     #more-arrows {
@@ -164,7 +170,7 @@
     }
     .arrow-top {
         opacity: 0;
-        fill: rgb(251, 172, 172);
+        fill: rgb(151, 146, 146);
     }
     #liennext{
         width: 100px;
@@ -175,21 +181,8 @@
     #pagenext{
         height: 100vh;
         /* background-color: #ffffff; */
-        background-image: linear-gradient(rgb(139, 137, 137), white);
-    }
-
-    h3{
-        margin: 0;
-        text-align: center;
-        padding: 10px;
-        font-size: 2.5em;
-    }
-    #choix{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 90%;
-    }
+        background-image: url(/home.jpg);
+    } 
     a{
         width: 100%;
         height: 100%;

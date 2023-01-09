@@ -8,40 +8,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/EF.png" type="image/x-icon">
     <title>MMI-Dataviz</title>
 </head>
 
 <body>
-    <a class="home" href="index.html">HOME</a>
-    <a class="home" href="MMI.html">Projets MMI</a>
+    <nav>
+    <a class="home" href="/index.html">HOME</a>
+    <a class="home" href="/mmi/MMI.html">Projets MMI</a>
+</nav>
     <h1>Dataviz</h1>
     <main>
         <div>
-            <a href="dataviz.html" target="_blank">
+            <a href="/explication/dataviz.html" target="_blank">
 
                 <div class="imageLien">
-                    Voir le site ↗
+                    Voir le projet↗
                 </div>
             </a>
         </div>
         <div class="text">
-            <p>Le projet <b>Dataviz</b> est un projet MMI de 2ème année. Le projet était de faire un site avec un élément de visualisation de données. Avec Emy BIGIRIMANA et Jeanne BESOMBES nous avons choisis de faire une carte intéractive sur l'évolution des lois sur le droit de l'avortement en Europe.</p>
+            <p>Le projet <b>Dataviz</b> est un projet MMI de 2ème année. Le projet était de faire un site avec un
+                élément de visualisation de données. Avec <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADRnpW8Br9jOBPfonNSI_97hsf20ByskhzY&keywords=emy%20bigirimana&origin=RICH_QUERY_SUGGESTION&position=0&searchId=936ae3aa-d14e-48fb-ae25-0b3ec642042d&sid=h5g" target="_blank"> Emy BIGIRIMANA </a> et <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADfVkFMB-oUfTH5N2RpGLTRelL7J399AhD4&keywords=jeanne%20besombes&origin=RICH_QUERY_SUGGESTION&position=0&searchId=2db41a87-cd74-4395-b98d-99b59090557f&sid=s*r" target="_blank"> Jeanne BESOMBES </a> nous avons choisis de faire
+                une carte intéractive sur l'évolution des lois sur le droit de l'avortement en Europe.</p>
+                <br><p>J'ai créer le logo de ce site, ainsi que la cahrte graphique tout en vérifiant le rapport de coontraste entre les éléments.</p>
         </div>
     </main>
 </body>
 
-        </div>
-    </main>
+</div>
+</main>
 </body>
 <style>
     *::after {
         box-sizing: border-box;
     }
 
+    html {
+        height: 100%;
+    }
+
     body {
-        background-color: #B8DCF2;
+        background-image: url(/mmi/marbreMmi.png);
         margin: 0;
     }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 10%;
+        position: relative;
+        top: 15px;
+    }
+
     .home {
         font-size: 1.5rem;
         width: 10vh;
@@ -51,83 +71,81 @@
         font-family: 'Pacifico';
     }
 
-    h1{
+    h1 {
         text-align: center;
         font-family: kanit;
     }
 
-    main{
+    main {
         display: flex;
         flex-direction: row;
         margin-top: 3%;
-        padding: 0 2%;
-        gap: 2%;
-        height: 70vh;
+        padding: 0 5%;
+        /* gap: 2%; */
+        height: 100%;
     }
 
     div {
         width: 50%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         /* line-height: 25px; */
         gap: 0;
     }
-    .text{
+
+    .text {
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start;
-        height: fit-content;
+        margin: 50px 0px;
     }
-    p{
+
+    p {
         font-size: 1.3rem;
-        font-family:roboto;
+        font-family: roboto;
         /* line-height: 25px; */
     }
-    a{
-        width: 80%;
-        height: 80%;
+
+    a {
+        width: 70%;
+        height: 50%;
         text-decoration: none;
         font-size: 2rem;
         font-family: kanit;
         border-radius: 5px;
     }
-    .imageLien:hover{
+
+    .imageLien:hover {
         text-decoration: underline;
         font-size: 2.3rem;
-        cursor:pointer;
     }
-    .imageLien{
+
+    .imageLien {
         color: antiquewhite;
         font-weight: 900;
-        font-size: 2rem;
         width: 100%;
         height: 100%;
-        display: flex;
-        background-image: url("vignettedataviz1.png");
+        background-image: url("/explication/img/vignettedataviz1.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 10px;
     }
-    @media screen and (max-width:800px) {
-        main{
+
+    @media screen and (max-width:700px) {
+        main {
             display: flex;
             flex-direction: column;
             height: 100vh;
         }
-        .text{
-            justify-content: flex-start;
-            margin-bottom: 50px;
+
+        div {
+            width: 100%;
+            height: 50%;
         }
-        div{
-            width:100%;
-            height:50%;
-        }
-        div:not(.text){
-            height: 50vh;
-        }        
+
     }
 </style>
 

@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/EF.png" type="image/x-icon">
     <title>MMI-Site de réservation</title>
 </head>
 
 <body>
-    <a class="home" href="index.html">HOME</a>
-    <a class="home" href="MMI.html">Projets MMI</a>
+    <nav>
+    <a class="home" href="/index.html">HOME</a>
+    <a class="home" href="/mmi/MMI.html">Projets MMI</a>
+</nav>
     <h1>Le site de réservation</h1>
     <main>
         <div>
@@ -22,11 +25,12 @@
                 <div class="imageLien">
                     Voir le site ↗
                 </div>
-                <!-- <img src="images/resaweb.png" alt=""> -->
+                
             </a>
         </div>
         <div class="text">
             <p>Le projet <b>Résaweb</b> consiste en la création d'un site de réservation. Nous étions libre du choix de la marchandise à réserver.</p> 
+            <p>Ce projet était individuel et j'ai réalisé tout le site moi même.</p>
             <br>
             <p>Les consignes exigeais <u>plusieurs choix</u> de marchandise et un <u>calendrier</u> pour les dates. Il fallais également que toutes les informations liés à une réservation soit envoyés sur notre <u>base de données</u>. Un <u>système de tri</u> ou de filtre des recherche était également attendus, ici j'ai opté pour de simple radio bouton qui remonte la catégorie souhaitée.</p>
             <br>
@@ -42,8 +46,17 @@
     }
 
     body {
-        background-color: #B8DCF2;
+        background-image: url(/mmi/marbreMmi.png);
         margin: 0;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 10%;
+        position: relative;
+        top: 15px;
     }
     .home {
         font-size: 1.5rem;
@@ -62,6 +75,7 @@
     main{
         display: flex;
         flex-direction: row;
+        align-items: stretch;
         margin-top: 3%;
         padding: 0 2%;
         gap: 2%;
@@ -82,6 +96,7 @@
         align-items: flex-start;
         justify-content: flex-start;
         height: fit-content;
+        /* margin: 50px 0px; */
     }
     p{
         font-size: 1.3rem;
@@ -102,17 +117,18 @@
         cursor:pointer;
     }
     .imageLien{
-        color: antiquewhite;
+        color: white;
         font-weight: 900;
         font-size: 2rem;
         width: 100%;
         height: 100%;
         display: flex;
-        background-image: url("vignetteResaweb.png");
+        justify-content: center;
+        background-image: url("/explication/img/vignetteResaweb.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        border-radius: 1px;
+        border-radius: 10px;
     }
     @media screen and (max-width:800px) {
         main{
