@@ -10,7 +10,7 @@
     }
     nav {
         height: 100%;
-        background-image: url(/home.jpg);
+        background-image: url(home.jpg);
     }
     
     p{
@@ -26,7 +26,7 @@
     #pagenext{
         height: 100vh;
         /* background-color: #ffffff; */
-        background-image: url(/home.jpg);
+        background-image: url(home.jpg);
     }
 
     h3{
@@ -67,7 +67,7 @@ div {
     height: 90%;
 }
 #mmi {
-    background-image: url(/mmiFace.png);
+    background-image: url(mmiFace.png);
     background-size: cover;
     background-position: center;
 /* 
@@ -79,7 +79,7 @@ div {
     border-radius: 50%;
 }
 #mmiBack{
-    background-image: url(/mmiBack.png);
+    background-image: url(mmiBack.png);
     background-size: cover;
     background-position: center;
 
@@ -99,7 +99,7 @@ div {
 }
 
 #contact {
-    background-image: url(/moiFace.png);
+    background-image: url(moiFace.png);
     background-size: cover;
     background-position: center;
 
@@ -109,7 +109,7 @@ div {
     border-radius: 50%;
 }
 #contactBack{
-    background-image: url(/moiBack.png);
+    background-image: url(moiBack.png);
     background-size: cover;
     background-position: center;
     
@@ -126,7 +126,7 @@ div {
 }
 
 #perso {
-    background-image: url(/PPFace.png);
+    background-image: url(PPFace.png);
     background-size: cover;
     background-position: center;
 
@@ -136,7 +136,7 @@ div {
     border-radius: 50%;
 }
 #persoBack{
-    background-image: url(/PPBack.png);
+    background-image: url(PPBack.png);
     background-size: cover;
     background-position: center;
 
