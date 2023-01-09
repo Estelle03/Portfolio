@@ -37,7 +37,7 @@ h3{
     height: 90%;
 }
 #mmi {
-    background-image: url(/mmiFace.png);
+    background-image: url(mmiFace.png);
     background-size: cover;
     background-position: center;
 /* 
@@ -49,7 +49,7 @@ h3{
     border-radius: 50%;
 }
 #mmiBack{
-    background-image: url(/mmiBack.png);
+    background-image: url(mmiBack.png);
     background-size: cover;
     background-position: center;
 
@@ -69,7 +69,7 @@ h3{
 }
 
 #contact {
-    background-image: url(/moiFace.png);
+    background-image: url(moiFace.png);
     background-size: cover;
     background-position: center;
 
@@ -79,7 +79,7 @@ h3{
     border-radius: 50%;
 }
 #contactBack{
-    background-image: url(/moiBack.png);
+    background-image: url(moiBack.png);
     background-size: cover;
     background-position: center;
     
@@ -96,7 +96,7 @@ h3{
 }
 
 #perso {
-    background-image: url(/PPFace.png);
+    background-image: url(PPFace.png);
     background-size: cover;
     background-position: center;
 
