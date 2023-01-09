@@ -7,7 +7,10 @@
     <title>Mes projets personnels</title>
 </head>
 <body>
+    <nav>
       <a class="home" href="index.html">HOME</a>
+    <a class="home" href="index.html">HOME</a>
+    </nav>
     <h1>Mes oeuvres personnels</h1>
     <p>Voici un méli-mélo de création que j'ai réalisé: <br> il y a des dessins papiers fais à l'aquarelle, aux crayons de couelurs, poscas, crayon gris... <br> Il y a aussi des créations numériques: dessins à la main ou avec Adobe Illustrator; collage photos avec Photoshop, photos, vidéos etc...</p>
     <main>
@@ -50,6 +53,15 @@
     body{
         height: 100vh;
         background-color: #795548;
+    }
+    nav { 
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 10%;
+        position: relative;
+        top: 15px; 
     }
     .home {
     position: fixed;
