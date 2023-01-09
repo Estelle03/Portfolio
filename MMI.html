@@ -5,97 +5,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- FONT PACIFICO -->
+  <meta name="description" content="portfolio but mmmi estelle fabert">
+  <!-- Crete Round -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="EF.png" type="image/x-icon">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/EF.png" type="image/x-icon">
   <title>Projets MMI</title>
 </head>
 
 <body>
+  <nav>
+    <a class="home" href="/index.html">HOME</a>
+    <a class="home" href="/perso/perso2.html">Projets personnels</a>
+  </nav>
   <h1>Mes projets MMI</h1>
-  <a class="home" href="index.html">HOME</a>
+  <h2>Découvrez les enseignements appris à travers des cas pratique!</h2>
+
   <!-- slider photos -->
   <section class="slider">
     <div class="js-photos">
-      <div class="js-photo">
-        <a href="explication_podcast.html">
-          <img class="photoDouble clone" src="iconPodcast.png" alt="projet podcast">
+      <!-- <div class="js-photo">
+        <a href="/explication/explication_resaweb.html">
+          <img class="photo" src="images/monitor.png" alt="projet site de réservation">
         </a>
-      </div>
+      </div> -->
+
 
       <div class="js-photo">
-        <a href="explication_wordpress.html">
-          <img class="photo" src="iconMaison.png" alt="projet site wordpress">
+        <a href="/explication/explication_wordpress.html">
+          <img class="photo" src="images/iconMaison.png" alt="projet site wordpress">
         </a>
       </div>
       <div class="js-photo">
-        <a href="explication_interview.html">
-          <img class="photo" src="iconVideo.png" alt="projet interview">
-        </a>
-      </div>
-      <div class="js-photo">
-        <a href="explication_afficheLondres.html">
-          <img class="photo" src="iconImage.png" alt="projet affiche Londres">
-        </a>
-      </div>
-      <div class="js-photo">
-        <a href="explication_dataviz.html">
-          <img class="photo" src="iconDataviz.png" alt="projet visualisation de données">
-        </a>
-      </div>
-      <div class="js-photo">
-        <a href="explication_refonte.html">
-          <img class="photo" src="iconUX.png" alt="projet refonte d'application">
-        </a>
-      </div>
-      <div class="js-photo">
-        <a href="explication_resaweb.html">
-          <img class="photo" src="iconCoding.png" alt="projet site de réservation">
-        </a>
-      </div>
-      <div class="js-photo">
-        <a href="explication_podcast.html">
-          <img class="photoDouble" src="iconPodcast.png" alt="projet podcast">
-        </a>
-      </div>
 
-      <div class="js-photo">
-        <a href="explication_wordpress.html">
-          <img class="photo clone" src="iconMaison.png" alt="projet site wordpress">
+        <a href="/explication/explication_podcast.html">
+          <img class="photo" src="images/iconPodcast.png" alt="projet podcast">
         </a>
       </div>
       <div class="js-photo">
-        <a href="explication_interview.html">
-          <img class="photo clone" src="iconVideo.png" alt="projet interview">
+        <a href="/explication/explication_interview.html">
+          <img class="photo" src="images/iconVideo.png" alt="projet interview">
         </a>
       </div>
       <div class="js-photo">
-        <a href="explication_afficheLondres.html">
-          <img class="photo clone" src="iconImage.png" alt="projet affiche Londres">
+        <a href="/explication/explication_afficheLondres.html">
+          <img class="photo" src="images/iconImage.png" alt="projet affiche Londres">
         </a>
       </div>
       <div class="js-photo">
-        <a href="explication_dataviz.html">
-          <img class="photo clone" src="iconDataviz.png" alt="projet visualisation de données">
+        <a href="/explication/explication_dataviz.html">
+          <img class="photo" src="images/iconDataviz.png" alt="projet visualisation de données">
         </a>
       </div>
       <div class="js-photo">
-        <a href="explication_refonte.html">
-          <img class="photo clone" src="iconUX.png" alt="projet refonte d'application">
+        <a href="/explication/explication_refonte.html">
+          <img class="photo" src="images/iconUX.png" alt="projet refonte d'application">
         </a>
       </div>
       <div class="js-photo">
-        <a href="explication_resaweb.html">
-          <img class="photo clone" src="iconCoding.png" alt="projet resaweb">
+        <a href="/explication/explication_resaweb.html">
+          <img class="photo" src="images/monitor.png" alt="projet site de réservation">
         </a>
       </div>
     </div>
     <section class="slidebouton">
       <button class="BtnDecalDroite">⭠</button>
-          <button class="BtnDecalGauche">⭢</button>
+      <button class="BtnDecalGauche">⭢</button>
     </section>
   </section>
 
@@ -109,8 +85,8 @@
       var btnDecaleDroite = document.querySelector('.BtnDecalDroite');
 
       // position slide courante
-      var position = 1;
-      var minPosition = 0;
+      var position = -1;
+      var minPosition = -1;
       var maxPosition = photos.length - 3;
 
       function decaleGauche() {
@@ -142,24 +118,20 @@
       }
 
       function retourDebut() {
-        position = minPosition + 1;
+        position = minPosition - 0;
         photosWrapper.classList.add('no-anime'); // on empÃ¨che la transition animÃ©e
         photosWrapper.style.left = position * -photoWidth + "px"; // on saute sur le clone
       }
 
       function retourFin() {
-        position = maxPosition - 1;
+        position = maxPosition + 1;
         photosWrapper.classList.add('no-anime'); // on empÃ¨che la transition animÃ©e
         photosWrapper.style.left = position * -photoWidth + "px"; // on saute sur le clone
       }
 
       btnDecaleGauche.addEventListener('click', decaleGauche);
       btnDecaleDroite.addEventListener('click', decaleDroite);
-
-
     });
-
-
   </script>
 </body>
 <style>
@@ -169,42 +141,82 @@
 
   body {
     background-color: #C5ABD1;
-    overflow: hidden;
+    background-image: url(/mmi/marbreMmi.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: fixed;
+    overflow-x: scroll;
+  }
+
+  nav {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    /* gap: 20px; */
+    position: relative;
+    text-align: center;
+    gap: 10%;
+    top: 15px;
   }
 
   .home {
-    position: fixed;
+    /* position: fixed; */
+    width: 10%;
     top: 0;
     left: 0;
-    font-size: 1.5rem;
-    width: 10vh;
+    font-size: 1.8em;
+    /* width: 100%; */
     padding: 0px 30px;
     text-decoration: none;
     color: black;
-    font-family: 'Pacifico';
+    font-family: 'Crete round';
+    text-align: center;
+    /* display: flex; */
+  }
+
+  a {
+    text-align: center;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: line-through rgba(138, 137, 137, 0.7) 10px;
   }
 
   h1 {
     text-align: center;
-    font-family: 'pacifico';
+    font-family: sans-serif;
+    font-size: 3rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: cursive;
   }
 
   /* LE SLIDER */
   .slider {
-    overflow: hidden;
+    overflow-x: scroll;
     position: relative;
-    top: 20vh;
-    width: 100vw;
+    top: 15vh;
+    width: 100%;
     height: 340px;
+    margin: auto;
     /* display:flex; */
     /* flex-direction:column; */
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .js-photos {
     position: absolute;
-    width: 1530px;
+    width: 90%;
     height: 340px;
-    left: -510px;
+    /* left: -510px; */
     display: flex;
     transition: left 0.6s ease-out;
     border-radius: 0;
@@ -216,7 +228,7 @@
 
   .js-photo {
     position: relative;
-    width: 300px;
+    width: 30%;
     height: 340px;
     margin: 0;
     padding: 0;
@@ -232,7 +244,7 @@
     height: 40px;
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
-    color: rgb(219, 219, 219);
+    color: white;
     font-size: 2rem;
     font-family: 'Bebas neue', cursive;
     font-weight: 900;
@@ -241,9 +253,9 @@
     align-items: flex-start;
     border: none;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     left: 5px;
-    top: 50%;
+    top: 60vh;
   }
 
   .BtnDecalGauche {
@@ -252,23 +264,8 @@
   }
 
   .photo {
-    width: 100px;
+    width: 10vw;
     height: 100%;
-
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-animation-name: swing;
-    animation-name: swing;
-  }
-
-  .photoDouble {
-    width: 100px;
-    height: 100px;
 
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
@@ -335,10 +332,24 @@
   }
 
   @media screen and (max-width:700px) {
-    .js-photo{
+    .js-photo {
       width: 200px;
     }
-    
+
+    .slider {
+      position: relative;
+      top: 0px;
+    }
+
+    .photo {
+      width: 20vw;
+    }
+
+    .home {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 </style>
 
